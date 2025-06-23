@@ -153,3 +153,11 @@ You can use **Postman** to test all endpoints:
 * Use DELETE with a valid `:id` to remove a student.
 
 That's it! 🎉
+
+#ASSIGNMENT 3
+## 🧪 Test Coverage
+
+![Test Coverage](./coverage.png)
+
+Achieved ~70% test coverage using Jest & Supertest.
+

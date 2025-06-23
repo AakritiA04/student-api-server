@@ -17,9 +17,12 @@ mongoose.connect(process.env.MONGODB_URI)
 // Use routes
 app.use('/api/students', studentRoutes);
 
-// Start server
-app.listen(process.env.PORT, () => {
-  console.log(`🚀 Server running on http://localhost:${process.env.PORT}`);
-});
+// ✅ Start server only if not testing
+if (process.env.NODE_ENV !== 'test') {
+  app.listen(process.env.PORT || 3000, () => {
+    console.log(`🚀 Server running on http://localhost:${process.env.PORT || 3000}`);
+  });
+}
 
-// module.exports= router;
+// ✅ Export app for testing
+module.exports = app;
