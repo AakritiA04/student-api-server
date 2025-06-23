@@ -155,6 +155,8 @@ You can use **Postman** to test all endpoints:
 That's it! 🎉
 
 #ASSIGNMENT 3
+## New tech added: 
+Jest + Supertest (for writing and running tests)
 ## 🧪 Test Coverage
 
 ![Test Coverage](./coverage.png)
